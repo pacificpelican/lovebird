@@ -2,8 +2,6 @@
 
 .DS_Store
 
-assets/files/*
-assets/font/*
 assets/build
 build
 assets/dist
