@@ -11,7 +11,7 @@
 				<div class="apientry">
 					<p>
 						<? $this->load->helper('url'); ?>
-					<a href="https://djmblog.com/store"><img class="sidebar" alt="Store" src="<? echo base_url() . '/assets/images/store/djmblogstore.jpg' ?>" /></a>
+					<a href="https://djmblog.com/store"><img class="sidebar" alt="Store" src="<? echo base_url() . 'assets/images/djmblogstore.jpg' ?>" /></a>
 					</p>
 				</div>
 		</div>
