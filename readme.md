@@ -14,10 +14,10 @@ When your site is ready, change the constant "DEFAULT_NEW_USER_LEVEL" in your pr
 After that you can customize the site to your needs.  Edit the views that present the content so it looks the way you want, and modify the controllers for your purposes: visit the [CodeIgniter documentaion](https://www.codeigniter.com/user_guide/) and the [LoveBird homepage](http://lovebird.pacificio.com) to learn more about how to build out your site.
 
 ### Links ###
-+[djmblogGuide](djmblogGuide.md)
-+[todo](todo.md)
-+[web site](http://lovebird.pacificio.com)
-+[GitHub](https://github.com/pacificpelican/lovebird)
+- [djmblogGuide](djmblogGuide.md)
+- [todo](todo.md)
+- [web site](http://lovebird.pacificio.com)
+- [GitHub](https://github.com/pacificpelican/lovebird)
 
 #### Set up using [Xampp](https://www.apachefriends.org/index.html) or [MAMP](https://www.mamp.info/en/) ####
 > The lovebird4.sql file in the root of the directory is the database.  From Xampp you want to get to phpMyAdmin (if Xampp is running its phpMyAdmin install should be available at something like http://localhost:80/phpmyadmin), where you will want to create a new database with the name lovebird4 and then use the import feature to upload the lovebird4.sql file to that new database.  After that it may well work but you have to check that the database user and password in the application/configure/config.php match valid credentials in your Xampp mySQL server--MAMP creates a user root with password root for the whole db server but Xampp may have different defaults so you just need to make sure that the user and password fields match ones with permissions to modify the lovebird4 database.
