@@ -61,7 +61,7 @@ define('DROPBOXS_FILE_PATH', './assets/files/');		//	File upload path for Dropbo
 define('DROPBOXS_FILE_PATH_VIA_ROOT', '.' . DROPBOXS_FILE_PATH);		//	File upload path for Dropboxs controller
 
 define('DEFAULT_NEW_USER_LEVEL', 1);	//	This determines what level new signups start at for privileges listed below
-                //  This access level is set in the database table: users_levels  
+                //  This access level is set in the database table: users_levels
 define('USER_LEVEL_PHOTO_CLIENT', 1);		//	What minimum user level is required to use /myphotos?
 define('USER_LEVEL_STORE', 1);				//	What minimum user level is required to use /store?
 define('USER_LEVEL_GAMES', 1);				//	What minimum user level is required to use /card?
@@ -88,7 +88,7 @@ define('IMAGE_LIBRARY_PREFERENCE', 'netpbm');	// choose the image processing lib
 define('PHOTOGRAPHY_PRICE_PER_IMAGE', 2.50);
 define('STATE_TAX_RATE', 0.096);
 define('STATE_TITLE', 'Washington State');
-define('PHOTOGRAPHER_ID', 20);  // the id of the photographer/admin in the users table in the database
+define('PHOTOGRAPHER_ID', 0);  // the id of the photographer/admin in the users table in the database
 
 /* --------------------------------------------------------------------------- /*
 
