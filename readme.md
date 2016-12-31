@@ -25,6 +25,8 @@ So the best way is probably to go on phpMyAdmin and see if there is a root user 
 
 > To make sure your account is an admin account, after you have created it you can go into phpMyAdmin and change the integer [default 1] that corresponds to your user id (as found in the users table) in the users_levels table to 10 or higher.
 
+> The LoveBird app runs out of the index.php in the root of the project.  In your server's settings, point the document root to the top level folder of the project.
+
 The LoveBird project was originally developed for [Jessica McKeown](http://jessica.sf3am.com) Photography.
 
 ![Jessica McKeown Photography](https://github.com/pacificpelican/lovebird/blob/master/assets/files/uebnvc-248h13h389-h9823h-r-(H-(-h.jpg "Jessica McKeown Photography")
