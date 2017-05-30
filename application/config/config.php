@@ -11,7 +11,7 @@ Released under MIT License
 
 const LOVEBIRDS_STORE_VERSION = '0.9.9';		//	lovebird.pacificio.com
 
-const CODEIGNITER_SYSTEM_VERSION = '3.0.6';		//	codeigniter.com
+const CODEIGNITER_SYSTEM_VERSION = '3.1.4';		//	codeigniter.com
 
 /*
 ------------------
