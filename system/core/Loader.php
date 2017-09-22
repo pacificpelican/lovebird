@@ -182,7 +182,7 @@ class CI_Loader {
 	 * Loads and instantiates libraries.
 	 * Designed to be called from application controllers.
 	 *
-	 * @param	string	$library	Library name
+	 * @param	mixed	$library	Library name
 	 * @param	array	$params		Optional parameters to pass to the library class constructor
 	 * @param	string	$object_name	An optional object name to assign to
 	 * @return	object
@@ -344,9 +344,10 @@ class CI_Loader {
 				throw new RuntimeException('Unable to locate the model you have specified: '.$model);
 			}
 		}
-		elseif ( ! is_subclass_of($model, 'CI_Model'))
+
+		if ( ! is_subclass_of($model, 'CI_Model'))
 		{
-			throw new RuntimeException("Class ".$model." already exists and doesn't extend CI_Model");
+			throw new RuntimeException("Class ".$model." doesn't extend CI_Model");
 		}
 
 		$this->_ci_models[] = $name;
@@ -937,7 +938,7 @@ class CI_Loader {
 		empty($_ci_vars) OR $this->_ci_cached_vars = array_merge($this->_ci_cached_vars, $_ci_vars);
 		extract($this->_ci_cached_vars);
 
-		/*
+		/**
 		 * Buffer the output
 		 *
 		 * We buffer the output for two reasons:
@@ -950,18 +951,7 @@ class CI_Loader {
 		 */
 		ob_start();
 
-		// If the PHP installation does not support short tags we'll
-		// do a little string replacement, changing the short tags
-		// to standard PHP echo statements.
-		if ( ! is_php('5.4') && ! ini_get('short_open_tag') && config_item('rewrite_short_tags') === TRUE)
-		{
-			echo eval('?>'.preg_replace('/;*\s*\?>/', '; ?>', str_replace('<?=', '<?php echo ', file_get_contents($_ci_path))));
-		}
-		else
-		{
-			include($_ci_path); // include() vs include_once() allows for multiple views with the same name
-		}
-
+		include($_ci_path); // include() vs include_once() allows for multiple views with the same name
 		log_message('info', 'File loaded: '.$_ci_path);
 
 		// Return the file data if requested
