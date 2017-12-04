@@ -1,5 +1,10 @@
 [LoveBird](http://lovebird.pacificio.com): free software to run websites
 =====
+
+___
+➡️ Also check out the new images-focused fork of LoveBird, [Gallery 4](https://github.com/pacificpelican/gallery4)
+___
+
 #### created by [Dan McKeown](http:/danmckeown.info) ####
 #### based on [CodeIgniter](http://codeigniter.com) 3 ####
 ##### released under the [MIT License](LICENSE), copyright 2016 #####
