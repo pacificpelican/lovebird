@@ -9,7 +9,7 @@ Released under MIT License
 
 /*	Application Info   */
 
-const LOVEBIRDS_STORE_VERSION = '0.20.0';		//	lovebird.pacificio.com
+const LOVEBIRDS_STORE_VERSION = '0.99.0';		//	lovebird.pacificio.com
 
 const CODEIGNITER_SYSTEM_VERSION = '3.1.6';		//	codeigniter.com
 

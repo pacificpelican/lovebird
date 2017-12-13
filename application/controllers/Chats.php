@@ -271,8 +271,6 @@ public function kill_chat($id)
 	{
 		$this->load->model('chat');
 
-		$query0 = $this->chat->get_the_users_chats('$id');
-
 		$query0 = $this->chat->get_the_chats_to($uid);
 
 		$the_row = $query0->row_array();
@@ -285,7 +283,10 @@ public function kill_chat($id)
 				$pdata['users_to_id'] = null;
 
 				$this->load->database();
-				$this->db->update('users_chats', $pdata, array('id' => $killTarget));
+
+				$this->db->set('users_to_id', null);
+				$this->db->where('chats_id', $id);
+				$this->db->update('users_chats');
 
 				$this->session->set_flashdata('info', 'message deleted');
 				$this->load->helper('url');
