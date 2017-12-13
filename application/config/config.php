@@ -9,9 +9,9 @@ Released under MIT License
 
 /*	Application Info   */
 
-const LOVEBIRDS_STORE_VERSION = '0.9.10';		//	lovebird.pacificio.com
+const LOVEBIRDS_STORE_VERSION = '0.20.0';		//	lovebird.pacificio.com
 
-const CODEIGNITER_SYSTEM_VERSION = '3.1.5';		//	codeigniter.com
+const CODEIGNITER_SYSTEM_VERSION = '3.1.6';		//	codeigniter.com
 
 /*
 ------------------
@@ -33,7 +33,7 @@ define('SITE_URL', 'http://localhost:8888');	//	Must be the site's address on th
 define('STRIPE_PRIVATE_API_KEY', 'sk_test_ff2cTSQQUXKvuGBfxd7S6r8H');	//	Site owner's Stripe private API key for testing
 define('STRIPE_PUBLIC_API_KEY', 'pk_test_lYEQDfOu5UOXli8SYn4o27xy');	//	Site owner's Stripe public API key for testing
 define('DJM_DB_HOST', 'localhost');	//	development (local) database host name, maybe localhost
-define('DJM_DB_NAME', 'lovebird4');	//	development (local) site database name
+define('DJM_DB_NAME', 'lovebirdv');	//	development (local) site database name
 define('DJM_DB_USER', 'root');	//	development (local) site database user name
 define('DJM_DB_PW', 'root');	//	development (local) site database password
 define('DJM_ENVIRONMENT', 'development');		//	set as 'development' or 'production'
