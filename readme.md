@@ -11,6 +11,9 @@ ___
 
 LoveBird can be used to create blogs, online stores, pages, and more.
 
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpacificpelican%2Flovebird.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpacificpelican%2Flovebird?ref=badge_large)
+
 ### Setup ###
 In order to install LoveBird, create a mySQL database and use the <code>lovebird4.sql</code> file included in the root of the project folder to set up the schema.  Then copy the code to the root of a web server, after changing the data in <code>[/application/config/config.php](application/config/config.php)</code> to reflect the details of your site.
 
@@ -35,3 +38,4 @@ So the best way is probably to go on phpMyAdmin and see if there is a root user 
 The LoveBird project was originally developed for [Jessica McKeown](http://jessica.sf3am.com) Photography.
 
 ![Jessica McKeown Photography](https://github.com/pacificpelican/lovebird/blob/master/assets/files/uebnvc-248h13h389-h9823h-r-(H-(-h.jpg "Jessica McKeown Photography")
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpacificpelican%2Flovebird.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpacificpelican%2Flovebird?ref=badge_shield)
